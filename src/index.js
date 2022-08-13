@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const todoTitle = "She is my wife.";
+const date = new Date();
+const dateName = date.getDate();
+const monthName = date.getMonth();
+const yearFull = date.getFullYear();
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <div>
+    <h2>{ todoTitle }</h2>
+    <p>lorem ipsum is a dubbing text website.</p>
+    <h1>Welcome Asif</h1>
+    <h2>To make aa good app.</h2>
+    <h3>{ dateName + "/" + monthName + "/" + yearFull }</h3>
+    </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+);

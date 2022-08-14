@@ -6,15 +6,6 @@ const dateName = date.getDate();
 const monthName = date.getMonth();
 const yearFull = date.getFullYear();
 
-// Array Destructuring
-const name = ["dog", "cat"];
-name[0];
-name[1];
-
-const ["dog","cat"] = name;
-const dog = name[0];
-const cat = name[1];
-
 function Card(props){
     // object Destructuring
     const {titleText, descText} = props

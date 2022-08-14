@@ -4,15 +4,22 @@ import Data from "./data.json";
 
 function App(){
 
-    let items = [];
-    for (let x = 0; x < Data.length; x++) {
-        items.push( <Card titleText= { Data[x].title } descText= { Data[x].desc }/> );
-    }
+    // let items = [];
+    // items = Data.map((item) => <Card titleText = {item.title} descText = {item.desc} /> );
+
+
+    // for (let x = 0; x < Data.length; x++) {
+    //     items.push( <Card titleText= { Data[x].title } descText= { Data[x].desc }/> );
+    // }
 
 
     return <div>
         <h1 className='headingStyle'>React App</h1>
-        {items}
+
+        { Data.map((item) => <Card titleText = {item.title} descText = {item.desc} /> ) }
+
+
+        {/* {items} */}
     </div>
 }
 

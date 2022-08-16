@@ -2,8 +2,9 @@ import React from "react";
 // import List from "./components/UniqueList/List";
 // import Card from "./components/Card";
 // import Data from "./data.json";
-import Card2 from "./components/Card2";
-import Card3 from "./components/card3";
+// import Card2 from "./components/Card2";
+// import Card3 from "./components/card3";
+import ReactBootstrap from "./components/React_Bootstrap/ReactBootstrap";
 
 // const users = [
 //     {
@@ -37,10 +38,13 @@ function App(){
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-        <Card2 name="Asif Ahamed" age="23"/>
-        <Card3 email="asifshezan7@gmail.com" />
+        <ReactBootstrap  />
 
 
+
+
+        {/* <Card2 name="Asif Ahamed" age="23"/>
+        <Card3 email="asifshezan7@gmail.com" /> */}
 
         {/* {
             users.map((user, index) =>

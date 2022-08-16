@@ -3,6 +3,7 @@ import React from "react";
 // import Card from "./components/Card";
 // import Data from "./data.json";
 import Card2 from "./components/Card2";
+import Card3 from "./components/card3";
 
 // const users = [
 //     {
@@ -37,7 +38,7 @@ function App(){
         <h1 className='headingStyle'>React App</h1>
 
         <Card2 name="Asif Ahamed" age="23"/>
-
+        <Card3 email="asifshezan7@gmail.com" />
 
 
 

@@ -1,5 +1,8 @@
 import React from "react";
-import State from "./State";
+import Conditional_Rendering from "./components/Conditional_Rendering/index.js";
+import './style.css'
+// import State from "./State";
+
 // import List from "./components/UniqueList/List";
 // import Card from "./components/Card";
 // import Data from "./data.json";
@@ -39,7 +42,7 @@ function App(){
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-        <State />
+        <Conditional_Rendering />
 
 
 

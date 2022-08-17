@@ -17,13 +17,10 @@ class Conditional_Rendering extends Component{
     render(){
 
         const {isLoggedIn} = this.state;
-        let element;
-
-        element = isLoggedIn ? <HomePage /> : <LogIn />
 
         return(
             <div>
-                {element}
+                {isLoggedIn && <HomePage />}
             </div>
         )
     }

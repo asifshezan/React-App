@@ -1,10 +1,11 @@
 import React from "react";
-import Event_Binding from "./Event_Binding";
+import './style.css'
+import Hooks_UseState from "./Hooks_UseState/index";
+import Hooks_UseState2 from "./Hooks_UseState/index2";
+// import Event_Binding from "./Event_Binding";
 // import Event_Handler from './Event_Handler/index';
 // import Conditional_Rendering from "./components/Conditional_Rendering/index.js";
-import './style.css'
 // import State from "./State";
-
 // import List from "./components/UniqueList/List";
 // import Card from "./components/Card";
 // import Data from "./data.json";
@@ -44,8 +45,12 @@ function App(){
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-        <Event_Binding />
+        <Hooks_UseState />
+        <Hooks_UseState2 />
 
+
+
+        {/* <Event_Binding /> */}
         {/* <Event_Handler /> */}
         {/* <Conditional_Rendering /> */}
         {/* <ReactBootstrap  /> */}

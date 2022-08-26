@@ -1,7 +1,10 @@
 import React from "react";
-import './style.css'
-import Hooks_UseState from "./Hooks_UseState/index";
-import Hooks_UseState2 from "./Hooks_UseState/index2";
+import './style.css';
+
+import Child from "./components/State_Lifting/Child";
+
+// import Hooks_UseState from "./Hooks_UseState/index";
+// import Hooks_UseState2 from "./Hooks_UseState/index2";
 // import Event_Binding from "./Event_Binding";
 // import Event_Handler from './Event_Handler/index';
 // import Conditional_Rendering from "./components/Conditional_Rendering/index.js";
@@ -41,15 +44,17 @@ function App(){
     //     items.push( <Card titleText= { Data[x].title } descText= { Data[x].desc }/> );
     // }
 
+    const data = "I'm form Parent data";
+
 
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-        <Hooks_UseState />
-        <Hooks_UseState2 />
+    <Child data={data} />
 
 
-
+        {/* <Hooks_UseState />
+        <Hooks_UseState2 /> */}
         {/* <Event_Binding /> */}
         {/* <Event_Handler /> */}
         {/* <Conditional_Rendering /> */}

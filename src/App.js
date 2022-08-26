@@ -46,11 +46,15 @@ function App(){
 
     const data = "I'm form Parent data";
 
+    const handleChildData = (childData) => {
+        console.log("App: " + childData);
+    };
+
 
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-    <Child data={data} />
+    <Child data={data} onChildData = {handleChildData} />
 
 
         {/* <Hooks_UseState />

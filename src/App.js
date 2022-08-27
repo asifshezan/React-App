@@ -1,8 +1,9 @@
 import React from "react";
+import Toggle from "./components/Toggle/toggle";
 import './style.css';
 
-import Child from "./components/State_Lifting/Child";
 
+// import Child from "./components/State_Lifting/Child";
 // import Hooks_UseState from "./Hooks_UseState/index";
 // import Hooks_UseState2 from "./Hooks_UseState/index2";
 // import Event_Binding from "./Event_Binding";
@@ -44,19 +45,21 @@ function App(){
     //     items.push( <Card titleText= { Data[x].title } descText= { Data[x].desc }/> );
     // }
 
-    const data = "I'm form Parent data";
+    // const data = "I'm form Parent data";
 
-    const handleChildData = (childData) => {
-        console.log("App: " + childData);
-    };
+    // const handleChildData = (childData) => {
+    //     console.log("App: " + childData);
+    // };
 
 
     return (<div>
         <h1 className='headingStyle'>React App</h1>
 
-    <Child data={data} onChildData = {handleChildData} />
 
 
+        <Toggle />
+
+{/* <Child data={data} onChildData = {handleChildData} /> */}
         {/* <Hooks_UseState />
         <Hooks_UseState2 /> */}
         {/* <Event_Binding /> */}
